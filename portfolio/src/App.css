@@ -1,0 +1,131 @@
+
+.App {
+  text-align: center;
+  padding: 10px 40px;
+  /* background: rgb(47, 44, 232);
+  
+  background: linear-gradient(45deg, #2f2ce8 0%, #755ecf 49%, #cc94b3 100%);
+
+  background: -moz-linear-gradient(45deg, #2f2ce8 0%, #755ecf 49%, #cc94b3 100%);
+
+  background: -webkit-linear-gradient(45deg, #2f2ce8 0%, #755ecf 49%, #cc94b3 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#2F2CE7", endColorstr="#755FCF", GradientType=1);
+  #2f2ce7 #755fcf #cc94b3 */
+  background: #cc94b3;
+
+  background: linear-gradient(45deg, #cc94b3 0%, #755ecf 13%, #2f2ce8 30%, #2f2ce8 54%, #755ecf 75%, #cc94b3 100%);
+
+  background: -moz-linear-gradient(45deg, #cc94b3 0%, #755ecf 13%, #2f2ce8 30%, #2f2ce8 54%, #755ecf 75%, #cc94b3 100%);
+
+  background: -webkit-linear-gradient(45deg, #cc94b3 0%, #755ecf 13%, #2f2ce8 30%, #2f2ce8 54%, #755ecf 75%, #cc94b3 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#CC94B3", endColorstr="#755ECF", GradientType=1);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white !important;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: londrinaOutline;
+  src: url(../public/fonts/LondrinaOutline-Regular.ttf);
+}
+@font-face {
+  font-family: londrinaSolid;
+  src: url(../public/fonts/LondrinaSolid-Regular.ttf);
+}
+
+@font-face {
+  font-family: robotoExtraLight;
+  src: url(../public/fonts/RobotoMono-ExtraLight.ttf);
+}
+@font-face {
+  font-family: robotoLight;
+  src: url(../public/fonts/RobotoMono-Light.ttf);
+}
+@font-face {
+  font-family: robotoRegular;
+  src: url(../public/fonts/RobotoMono-Regular.ttf);
+}
+@font-face {
+  font-family: robotoMedium;
+  src: url(../public/fonts/RobotoMono-Medium.ttf);
+}
+@font-face {
+  font-family: robotoSemiBold;
+  src: url(../public/fonts/RobotoMono-SemiBold.ttf);
+}
+@font-face {
+  font-family: robotoBold;
+  src: url(../public/fonts/RobotoMono-Bold.ttf);
+}
+@font-face {
+  font-family: robotoBoldItalic;
+  src: url(../public/fonts/RobotoMono-BoldItalic.ttf);
+}
+.robotoExtraLight {
+  font-family: robotoExtraLight;
+  font-weight: 200;
+}
+.robotoLight {
+  font-family: robotoLight;
+  font-weight: 300;
+}
+.robotoRegular {
+  font-family: robotoRegular;
+  font-weight: 400;
+}
+.robotoMedium {
+  font-family: robotoMedium;
+  font-weight: 500;
+}
+.robotoSemiBold {
+  font-family: robotoSemiBold;
+  font-weight: 600;
+}
+.robotoBold {
+  font-family: robotoBold;
+  font-weight: 700;
+}
+.robotoBoldItalic {
+  font-family: robotoBoldItalic;
+  font-weight: 700;
+}
+.londrinaOutline {
+  font-family: londrinaOutline;
+  font-weight: 600;
+}
+.londrinaSolid {
+  font-family: londrinaSolid
+}

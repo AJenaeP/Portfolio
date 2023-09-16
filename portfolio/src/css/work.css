@@ -1,0 +1,51 @@
+#work {
+    display: flex;
+    color: white;
+    padding-top: 248px;
+}
+
+#work .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#work .title {
+    color: white;
+    left: 200px;
+    position: absolute;
+    font-size: 70px;
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: 2px;
+    text-shadow: -8px 4px black;
+    text-decoration: underline solid white 3px;
+    text-underline-offset: 10px;
+}
+#work .Delta {
+    margin-top: 150px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: 66.67% 33.33%;
+    justify-items: center;
+    grid-template-rows: 400px 400px;
+}
+
+#work .Delta img {
+    position: relative;
+    width: 200px;
+}
+
+#work .Delta .description {
+    background: rgba(0, 0, 0, 0.345);
+    border: solid 1px white;
+    border-radius: 80px;
+    outline: 5px white;
+    padding: 50px 50px;
+    color: white;
+    width: 600px;
+    height: fit-content;
+}
+#work .Delta .description div{
+    margin-bottom: 15px;
+    text-align: left;
+}

@@ -1,0 +1,35 @@
+/* css for header */
+.navbar {
+    display: inline-flex;
+    top: 30px;
+    position: relative;
+}
+.header {
+    
+    justify-content: center;
+
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+
+}
+
+.header div {
+    display: flex;
+    width: fit-content;
+    background: rgba(0, 0, 0, 0.132) ;
+    border:solid 1px white ;
+    border-radius: 50px;
+    outline: 5px white;
+    padding: 8px;
+    
+}
+.header div:hover{
+    background: rgba(0, 0, 0, 0.531);
+}
+.header a {
+    margin: 3px;
+    filter: blur(0);
+    text-decoration: none;
+    color: white;
+}

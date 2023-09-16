@@ -1,0 +1,60 @@
+#contact {
+    display: flex;
+    color: #ffffff;
+    padding-top: 248px;
+}
+
+#contact .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#contact .title {
+    left: 200px;
+    position: absolute;
+    font-size: 70px;
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: 2px;
+    text-shadow: -8px 4px black;
+    text-decoration: underline solid white 3px;
+    text-underline-offset: 10px;
+}
+#contact .contactBorder {
+    margin-top: 150px;
+    margin-left: 400px;
+    background: rgba(0, 0, 0, 0.345);
+    border: solid 1px white;
+    border-radius: 80px;
+    outline: 5px white;
+    padding: 60px 50px;
+    color: white;
+    width: max-content
+}
+#contact .connect{
+    display: inline-flex;
+    margin-bottom: 50px;
+    align-items: center;
+    font-size: 24px;
+}
+.MuiInputBase-root.MuiFilledInput-root {
+    width: 500px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.MuiInputBase-root.MuiFilledInput-root:hover {
+    background-color: white;
+}
+.MuiInputBase-root.MuiFilledInput-root.Mui-focused {
+    background-color: white;
+}
+.MuiFormLabel-root.MuiInputLabel-root{
+    color: black;
+}
+.MuiButtonBase-root.MuiButton-root{
+    background-color: white;
+    color: black;
+}
+.MuiButtonBase-root.MuiButton-root:hover {
+    color: white;
+}
