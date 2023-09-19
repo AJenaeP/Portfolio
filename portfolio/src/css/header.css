@@ -1,17 +1,36 @@
-/* css for header */
-.navbar {
+.navigation {
     display: inline-flex;
     top: 30px;
     position: relative;
+    flex-direction: column;
+
+    @media (min-width: 700px) {
+        flex-direction: row
+    }
 }
 .header {
-    
     justify-content: center;
-
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
+    font-size: 25px;
+    flex-direction: column;
 
+    @media (min-width: 700px) {
+            flex-direction: row;
+        }
+    @media (min-width: 900px) {
+        font-size: 30px;
+    }
+
+}
+
+.headerBttn{
+    @media (min-width: 600px){
+        margin-right: 20px;
+    }
+    @media (max-width: 900px) {
+        margin-bottom: 10px;
+    }
 }
 
 .header div {
@@ -32,4 +51,12 @@
     filter: blur(0);
     text-decoration: none;
     color: white;
+}
+
+.navigation .MuiButtonBase-root.MuiIconButton-root{
+    color: white;
+}
+.navigation .iconBttns {
+    display: flex;
+
 }

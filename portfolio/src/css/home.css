@@ -1,10 +1,16 @@
 #home {
     text-align: center;
     color: white;
-    animation: fade 2s linear;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+
+    @media (min-width: 900px) {
+        flex-direction: row;
+        animation: fade 2s linear;
+    }
 }
 
 #home .container {
@@ -14,6 +20,13 @@
     outline: 5px white;
     padding: 100px 20px;
     color: white;
+    margin: 0 auto 20px auto;
+    width: auto;
+
+    @media (min-width: 900px) {
+        margin: 0 20px;
+        width: 500px;
+    }
 }
 #home .container:hover {
     box-shadow: -10px 10px rgba(0, 0, 0, 0.658);
@@ -24,6 +37,13 @@
     border: solid 3px white;
     padding-top: 10px;
     overflow:hidden;
+    width: 230px;
+    height: 230px;
+
+    @media (min-width: 600px) {
+        width: 330px;
+        height: 330px;
+    }
 }
 #home .imageBorder:hover {
     box-shadow: 10px 10px rgba(0, 0, 0, 0.658);
@@ -36,37 +56,12 @@
 #home .title {
     font-size: 200%;
 }
-
-@keyframes color-ease {
-    0% {
-        opacity: 0;
-        font-size: calc(0px + 2vmin);
-    }
-
-    20% {
-        opacity: .2;
-        font-size: calc(12px + 2vmin);
-    }
-
-    40% {
-        opacity: .4;
-        font-size: calc(24px + 2vmin);
-    }
-
-    60% {
-        opacity: .6;
-        font-size: calc(36px + 2vmin);
-    }
-
-    80% {
-        opacity: .8;
-        font-size: calc(48px + 2vmin);
-    }
-
-    100% {
-        color: white;
-        opacity: 1;
-        font-size: calc(60px + 2vmin);
+#home .memoji {
+    width: 200px;
+    height: 200px;
+    @media (min-width: 600px) {
+        width: 300px;
+        height: 300px;
     }
 }
 

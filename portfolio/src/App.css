@@ -2,16 +2,7 @@
 .App {
   text-align: center;
   padding: 10px 40px;
-  /* background: rgb(47, 44, 232);
-  
-  background: linear-gradient(45deg, #2f2ce8 0%, #755ecf 49%, #cc94b3 100%);
 
-  background: -moz-linear-gradient(45deg, #2f2ce8 0%, #755ecf 49%, #cc94b3 100%);
-
-  background: -webkit-linear-gradient(45deg, #2f2ce8 0%, #755ecf 49%, #cc94b3 100%);
-
-  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#2F2CE7", endColorstr="#755FCF", GradientType=1);
-  #2f2ce7 #755fcf #cc94b3 */
   background: #cc94b3;
 
   background: linear-gradient(45deg, #cc94b3 0%, #755ecf 13%, #2f2ce8 30%, #2f2ce8 54%, #755ecf 75%, #cc94b3 100%);

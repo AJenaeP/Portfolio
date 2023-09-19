@@ -14,18 +14,12 @@ function App() {
       <div className="App">
         <body>
           <Header/>
-          {/* <span id="home-anchor"></span> */}
           <Home/>
-          {/* <span id="about-anchor"></span> */}
           <About/>
-          {/* <span id="work-anchor"></span> */}
           <Work/>
-          {/* <span id="skills-anchor"></span> */}
           <Skills/>
-          {/* <span id="contact-anchor"></span> */}
           <Contact/>
         </body>
-
       </div>
       <div>
       </div>

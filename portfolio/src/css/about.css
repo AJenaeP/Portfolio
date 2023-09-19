@@ -1,6 +1,6 @@
 #about {
     display: flex;
-    color: #ffffff;
+    color: white;
     padding-top: 248px;
 }
 
@@ -11,7 +11,6 @@
 }
 
 #about .title {
-    left: 200px;
     position: absolute;
     font-size: 70px;
     -webkit-text-stroke: black;
@@ -19,24 +18,35 @@
     text-shadow: -8px 4px black;
     text-decoration: underline solid white 3px;
     text-underline-offset: 10px;
+
+    @media (min-width: 900px){
+        left: 200px;
+    }
 }
 #about .descriptionBorder{
-    margin-top: 150px;
-    margin-left: 300px;
     background: rgba(0, 0, 0, 0.345);
     border: solid 1px white;
     border-radius: 80px;
     outline: 5px white;
     padding: 100px 50px;
     color: white;
-    width: max-content
+    max-width: 900px;
+    height: auto;
+    margin: 150px auto 0px auto;
+    @media (min-width: 768px) {
+        font-size: 28px;
+    }
+
 }
 #about .description {
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
-    font-size: 28px;
     text-align: left;
+    font-size: 20px;
+    @media (min-width: 768px){
+        font-size: 28px;
+    }
+
 }
 #about .description div {
     margin-bottom: 20px;

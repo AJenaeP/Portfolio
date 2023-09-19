@@ -1,5 +1,4 @@
 import React from "react";
-import { useMediaQuery } from 'react-responsive'
 import Container from "react-bootstrap/esm/Container";
 import '../css/skills.css'
 import angular from '../images/angular.svg'
@@ -29,12 +28,6 @@ import xcode from '../images/xcode.svg'
 import jest from '../images/jest.svg'
 
 const Skills = () => {
-    let xs =  useMediaQuery({minWidth: 300})
-    let s =  useMediaQuery({ minWidth: 390})
-    let m =  useMediaQuery({ minWidth: 600})
-    let l = useMediaQuery({ minWidth: 900})
-    let xl = useMediaQuery({ minWidth: 1024})
-    let xxl =  useMediaQuery({ minWidth: 1400})
 
     const skills = [
         { image: angular, name: "Angular"},
@@ -67,11 +60,13 @@ const Skills = () => {
     return (
         <div id="skills">
             <Container>
-                <span id="skills-anchor" className="title robotoBoldItalic">Skills</span>
+                <span id="skills-anchor" className="title robotoBoldItalic">
+                    Skills
+                </span>
                 <div className="skillGrid">
                     { skills.map((skill) => 
                         <>
-                            <div className="skillbox">
+                            <div className="skillbox" key={skill.name}>
                                 <div className="imageBox"><img src={skill.image} alt=""/></div>
                                 <div className="robotoBold">{skill.name}</div>
                             </div>

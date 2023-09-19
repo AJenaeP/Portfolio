@@ -19,17 +19,23 @@
     text-shadow: -8px 4px black;
     text-decoration: underline solid white 3px;
     text-underline-offset: 10px;
+    margin: 0 auto;
+
+    @media (min-width: 900px) {
+            left: 200px;
+    }
 }
 #contact .contactBorder {
+    left: -5px;
     margin-top: 150px;
-    margin-left: 400px;
+    margin-left: auto;
+    margin-right: auto;
     background: rgba(0, 0, 0, 0.345);
     border: solid 1px white;
     border-radius: 80px;
     outline: 5px white;
     padding: 60px 50px;
     color: white;
-    width: max-content
 }
 #contact .connect{
     display: inline-flex;
@@ -38,7 +44,7 @@
     font-size: 24px;
 }
 .MuiInputBase-root.MuiFilledInput-root {
-    width: 500px;
+    width: 400px;
     background-color: white;
     margin-bottom: 10px;
 }

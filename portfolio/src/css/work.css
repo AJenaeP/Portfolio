@@ -6,13 +6,12 @@
 
 #work .container {
     display: flex;
-    flex-direction: column;
     width: 100%;
+    flex-direction: column;
 }
 
 #work .title {
     color: white;
-    left: 200px;
     position: absolute;
     font-size: 70px;
     -webkit-text-stroke: black;
@@ -20,19 +19,19 @@
     text-shadow: -8px 4px black;
     text-decoration: underline solid white 3px;
     text-underline-offset: 10px;
+
+    @media (min-width: 900px) {
+        left: 200px;
+    }
 }
 #work .Delta {
+    display: flex;
     margin-top: 150px;
-    margin-left: 100px;
-    display: grid;
-    grid-template-columns: 66.67% 33.33%;
-    justify-items: center;
-    grid-template-rows: 400px 400px;
-}
-
-#work .Delta img {
-    position: relative;
-    width: 200px;
+    flex-direction: row;
+    @media (max-width: 1280px){
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 #work .Delta .description {
@@ -42,10 +41,40 @@
     outline: 5px white;
     padding: 50px 50px;
     color: white;
-    width: 600px;
+    max-width: 600px;
     height: fit-content;
+    margin-right: 20px;
+    @media (min-width: 1280px) {
+        min-width:600px;
+    }
 }
 #work .Delta .description div{
     margin-bottom: 15px;
     text-align: left;
+}
+
+#work .carouselBox {
+    position: relative;
+    width: 550px;
+    @media (max-width: 1280px) {
+        margin-top: 50px;
+    }
+}
+.carousel-indicators {
+    visibility: hidden;
+}
+.carousel.slide{
+    overflow: hidden;
+}
+.carousel-inner {
+    height: 500px;
+}
+.carousel-control-prev{
+    visibility: hidden;
+}
+.carousel-control-next {
+    visibility: hidden;
+}
+.carousel-item{
+
 }

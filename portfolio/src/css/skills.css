@@ -5,12 +5,11 @@
 }
 
 #skills .container {
+    display: flex;
     width: 100%;
 }
 
 #skills .title {
-    color: white;
-    left: 200px;
     position: absolute;
     font-size: 70px;
     -webkit-text-stroke: black;
@@ -18,19 +17,30 @@
     text-shadow: -8px 4px black;
     text-decoration: underline solid white 3px;
     text-underline-offset: 10px;
+
+    @media (min-width: 900px) {
+        left: 200px;
+    }
 }
 
 #skills .skillGrid {
-    margin-top: 150px;
+    margin: 150px auto 0 auto;
     display: grid;
     justify-content: space-around;
-    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-template-columns: 150px 150px 150px;
+    @media (min-width: 700px) {
+        grid-template-columns: 150px 150px 150px 150px;
+    }
+    @media (min-width: 900px){
+        grid-template-columns: 150px 150px 150px 150px 150px;
+    }
 }
 #skills .skillbox {
     margin-bottom: 40px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 #skills .skillbox:hover {
     background-color: rgba(0, 0, 0, 0.203);
@@ -41,7 +51,7 @@
     margin-bottom: 20px;
     width: 130px;
     height: 130px;
-    justify-content: center;    
+    justify-content: center;
 }
 #skills .skillbox .imageBox img{
     max-width: 100%;

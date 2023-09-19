@@ -9,7 +9,9 @@ import 'react-toastify/dist/ReactToastify.min.css';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import IconButton from '@mui/material/IconButton';
 
+
 const Contact = () => {
+    
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [subject, setSubject] = useState("")
@@ -73,8 +75,10 @@ const Contact = () => {
     return (
         <div id="contact">
             <Container>
-                <span id="contact-anchor" className="title robotoBoldItalic">Contact</span>
-                <div className="contactBorder">
+                <span id="contact-anchor" className="title robotoBoldItalic"              
+                >Contact</span>
+                <div className="contactBorder"
+                >
                     <span className="robotoBold connect">Lets Connect!
                         <IconButton 
                             color="primary" 
@@ -93,7 +97,7 @@ const Contact = () => {
                             />
                         </IconButton>
                     </span>
-                    <form id='contact-form' onSubmit={handleSubmit(onSubmit)}validate>
+                    <form id='contact-form' onSubmit={handleSubmit(onSubmit)}>
                         <div className="nameField">
                             <TextField
                                 required
@@ -137,12 +141,10 @@ const Contact = () => {
                                 rows={6}
                                 variant="filled"
                                 onChange={handleMessageChange}
-                                sx={{
-                                    width: '500px'
-                                }}
                             />   
                         </div>    
                         <Button 
+                            target="_blank"
                             variant="contained"
                             type="submit"
                         >
