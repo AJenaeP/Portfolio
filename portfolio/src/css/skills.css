@@ -5,11 +5,11 @@
 }
 
 #skills .container {
-    display: flex;
     width: 100%;
 }
 
 #skills .title {
+    display: flex;
     position: absolute;
     font-size: 70px;
     -webkit-text-stroke: black;
