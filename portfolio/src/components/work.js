@@ -4,7 +4,7 @@ import '../css/work.css'
 import dse from '../images/dse.png'
 import dsePhone from '../images/dsePhone.png'
 import Carousel from 'react-bootstrap/Carousel';
-
+import passwordGenerator from '../images/finalProductPG.gif'
 
 const Work = () => {
 
@@ -51,6 +51,39 @@ const Work = () => {
                                         width: "550px"
                                     }}
                                 />                            
+                            </Carousel.Item>
+                        </Carousel>
+                    </div>
+                </div>
+                <div className="PasswordGenerator">
+                    <div className="description">
+                        <div className="robotoBold" style={{fontSize: '40px'}}>
+                            Password Generator
+                        </div>
+                        <div className="robotoLight" style={{fontSize: '20px'}}>
+                            Responsible for creating entire app. This is a simple and easy-to-use password generator.
+                        </div>
+                        <div className="robotoLight" style={{fontSize: '20px'}}>
+                            <span className="robotoSemiBold ">Role: </span>
+                            Full Stack Developer
+                        </div>
+                        <div className="robotoLight" style={{fontSize: '20px'}}>
+                            <span className="robotoSemiBold ">Tools: </span>
+                            Swift, SwiftUI, UIKit, GitHub, XCode
+                        </div>
+                    </div>
+                    <div className="carouselBox">
+                        <Carousel>
+                            <Carousel.Item>
+                                <img 
+                                    src={passwordGenerator} 
+                                    alt="" 
+                                    style={{
+                                        width: '250px',
+                                        height: '500px',
+                                        borderRadius: '10px'
+                                    }}
+                                />  
                             </Carousel.Item>
                         </Carousel>
                     </div>

@@ -34,7 +34,18 @@
     }
 }
 
-#work .Delta .description {
+#work .PasswordGenerator {
+    display: flex;
+    margin: 150px auto 0;
+    flex-direction: row;
+
+    @media (max-width: 1280px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#work .description {
     background: rgba(0, 0, 0, 0.345);
     border: solid 1px white;
     border-radius: 80px;
@@ -48,7 +59,7 @@
         min-width:600px;
     }
 }
-#work .Delta .description div{
+#work .description div{
     margin-bottom: 15px;
     text-align: left;
 }
@@ -74,7 +85,4 @@
 }
 .carousel-control-next {
     visibility: hidden;
-}
-.carousel-item{
-
 }
